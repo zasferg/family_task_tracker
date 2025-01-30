@@ -11,6 +11,7 @@ class TasksSchema(BaseSchema):
 
 class GetTaskSchema(TasksSchema):
     id: UUID
+    is_active: bool
     created_at: datetime
     updated_at: datetime
 
